@@ -15,6 +15,6 @@ spec:
     ref: master
   values:
     image: binaym/podinfo:dev-jybz61bd
-    replicaCount: 5
+    replicaCount: 7
     hpa:
       enabled: false
