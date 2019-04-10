@@ -14,7 +14,7 @@ spec:
     path: charts/podinfo
     ref: master
   values:
-    image: binaym/podinfo:dev-jybz61bd
+    image: binaym/podinfo:dev-xchlbo0r
     replicaCount: 7
     hpa:
       enabled: false
