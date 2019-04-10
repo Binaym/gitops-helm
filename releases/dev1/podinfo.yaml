@@ -2,7 +2,7 @@
 apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
-  name: podinfo-dev
+  name: podinfo-dev1
   namespace: dev1
   annotations:
 #    flux.weave.works/automated: "true"
