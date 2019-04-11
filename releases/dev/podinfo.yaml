@@ -15,6 +15,6 @@ spec:
     ref: master
   values:
     image: binaym/podinfo:dev-xchlbo0r
-    replicaCount: 3
+    replicaCount: 10
     hpa:
       enabled: false
