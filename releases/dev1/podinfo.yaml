@@ -1,0 +1,20 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: podinfo-dev1
+  namespace: dev1
+  annotations:
+#    flux.weave.works/automated: "true"
+    flux.weave.works/tag.chart-image: glob:dev1-*
+spec:
+  releaseName: podinfo-dev1
+  chart:
+    git: git@github.com:binaym/gitops-helm
+    path: charts/podinfo
+    ref: master
+  values:
+    image: binaym/podinfo:dev1-nxh3h19r
+    replicaCount: 3
+    hpa:
+      enabled: false
