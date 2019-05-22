@@ -8,13 +8,13 @@ metadata:
 #    flux.weave.works/automated: "true"
     flux.weave.works/tag.chart-image: glob:dev*
 spec:
-  releaseName: podinfo-dev2
+  releaseName: podinfo-dev
   chart:
     git: git@github.com:binaym/gitops-helm
     path: charts/podinfo
     ref: master
   values:
     image: binaym/podinfo:dev-xchlbo0r
-    replicaCount: 5
+    replicaCount: 8
     hpa:
       enabled: false
